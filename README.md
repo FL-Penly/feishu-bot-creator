@@ -28,7 +28,7 @@ npm i -g feishu-bot-creator
 feishu-bot-creator create-bot -n "my-bot"
 
 # 方式三：克隆后使用 run.sh
-git clone https://github.com/nicepkg/feishu-bot-creator.git
+git clone https://github.com/FL-Penly/feishu-bot-creator.git
 cd feishu-bot-creator
 npm install
 ./run.sh "my-bot" "我的机器人描述"
