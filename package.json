@@ -1,0 +1,54 @@
+{
+  "name": "feishu-bot-creator",
+  "version": "0.1.0",
+  "description": "飞书开放平台 CLI 工具 —— 一键创建飞书机器人（长连接模式）",
+  "type": "module",
+  "bin": {
+    "feishu-bot-creator": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "feishu",
+    "飞书",
+    "bot",
+    "机器人",
+    "cli",
+    "open-platform",
+    "开放平台",
+    "automation"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicepkg/feishu-bot-creator"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.59.0",
+    "@puppeteer/browsers": "^2.13.0",
+    "commander": "^12.1.0",
+    "jsqr": "^1.4.0",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^24.35.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pngjs": "^6.0.5",
+    "@types/qrcode": "^1.5.6",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}
